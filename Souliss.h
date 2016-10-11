@@ -41,6 +41,8 @@
 #include "frame/MaCaco/MaCaco.h"
 #include "frame/vNet/vNet.h"
 
+#include "IRremoteESP8266.h"  //Infrared Integration
+
 #if(MCU_TYPE == 0x01)	// Atmel AVR Atmega
 #	if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
 #		define MAXINPIN		69		// Max number of input pins
