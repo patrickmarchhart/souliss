@@ -33,6 +33,7 @@
 */
 
 #include <Arduino.h>
+#include "IRremoteESP8266.h"
 #include "tools/types.h"
 #include "tools/util.h"
 #include "Typicals.h"
