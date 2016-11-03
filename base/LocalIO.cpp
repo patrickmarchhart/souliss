@@ -845,3 +845,4 @@ void Souliss_HalfPrecisionFloating(U8 *output, float *input)
 	*(output)   = C16TO8L(output16);
 	*(output+1) = C16TO8H(output16);
 }
+

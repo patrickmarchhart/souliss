@@ -34,6 +34,7 @@
 #define	Souliss_T4n						0x40			// Typicals Group 0x40
 #define	Souliss_T5n						0x50			// Typicals Group 0x50
 #define	Souliss_T6n						0x60			// Typicals Group 0x60
+#define	Souliss_T7n						0x70			// Typicals Group 0x70
 
 #define Souliss_T11						0x11			// ON/OFF Digital Output with Timer Option
 #define Souliss_T12						0x12			// ON/OFF Digital Output with AUTO mode
@@ -311,6 +312,7 @@ void Souliss_SetT51(U8 *memory_map, U8 slot);
 U8 Souliss_Logic_T51(U8 *memory_map, U8 slot, const float deadband, U8 *trigger);
 
 void Souliss_SetT5n(U8 *memory_map, U8 slot, U8 typ);
+
 
 #define Souliss_SetT51(memory_map, slot) Souliss_SetT5n(memory_map, slot, 0x51)
 #define Souliss_SetT52(memory_map, slot) Souliss_SetT5n(memory_map, slot, 0x52)

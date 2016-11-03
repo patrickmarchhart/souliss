@@ -4,8 +4,8 @@
 //                                     //
 /////////////////////////////////////////
 
-#include "IRdebug.h"
-#include "Arduino.h"       
+#include "extras/src/IRremoteESP8266/IRdebug.h"
+#include <Arduino.h>       
 
 void  print_ir_data(decode_results *ir_data)
 {

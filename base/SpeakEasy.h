@@ -240,6 +240,7 @@ unsigned long tmr_fast=0, tmr_slow=0;
 #define	Set_T58(slot)				Souliss_SetT58(memory_map, slot)
 #define	Logic_T58(slot)				Souliss_Logic_T58(memory_map, slot, 0.015, &data_changed)
 
+
 #define	Watchdog(chain_address, chain_slot, alarm_command)	Souliss_Watchdog(memory_map, chain_address, chain_slot, alarm_command)
 /******************************************/
 
@@ -317,6 +318,12 @@ unsigned long tmr_fast=0, tmr_slow=0;
 #define LastIn_ClearData(id)									Souliss_LastIn_ClearData(memory_map, id)
 #define LastIn_GetData(id, slot) 								Souliss_LastIn_GetData(memory_map, id, slot)
 #define LastIn_GetAnalog(id, slot)								Souliss_LastIn_GetAnalog(memory_map, id, slot)
+
+//#define Souliss_ir_control_remote_node(target_address, command_slot, target_command, ir_signal, ir_decode_type, ir_command)				Souliss_ir_control_remote_node(memory_map, target_address, command_slot, target_command, ir_signal, ir_decode_type, ir_command)
+//#define Souliss_ir_control_local_node(command_slot, target_command, ir_signal, ir_decode_type, ir_command)								Souliss_ir_control_local_node(memory_map, command_slot, target_command, ir_signal, ir_decode_type, ir_command)
+#define Souliss_ir_control_remote_node(target_address, command_slot, target_command, ir_decode_type, ir_command)				Souliss_ir_control_remote_node(memory_map, target_address, command_slot, target_command, ir_decode_type, ir_command)
+#define Souliss_ir_control_local_node(command_slot, target_command, ir_decode_type, ir_command)								Souliss_ir_control_local_node(memory_map, command_slot, target_command, ir_decode_type, ir_command)
+#define Souliss_ir_control_device(typical, command_slot, parameter, ir_decode_type, nbits, ir_command)									Souliss_ir_control_device(memory_map, typical, command_slot, parameter, ir_decode_type, nbits, ir_command)
 
 /*****************************************/
 

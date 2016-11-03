@@ -27,8 +27,8 @@
  *  GPL license, all text above must be included in any redistribution
  ****************************************************/
 
-#include "IRremoteESP8266.h"
-#include "IRremoteInt.h"
+#include "extras/src/IRremoteESP8266/IRremoteESP8266.h"
+#include "extras/src/IRremoteESP8266/IRremoteInt.h"
 
 // These versions of MATCH, MATCH_MARK, and MATCH_SPACE are only for debugging.
 // To use them, set DEBUG in IRremoteInt.h

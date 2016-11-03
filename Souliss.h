@@ -41,7 +41,6 @@
 #include "frame/MaCaco/MaCaco.h"
 #include "frame/vNet/vNet.h"
 
-#include "IRremoteESP8266.h"  //Infrared Integration
 
 #if(MCU_TYPE == 0x01)	// Atmel AVR Atmega
 #	if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
@@ -55,6 +54,8 @@
 #	endif
 #elif(MCU_TYPE == 0x02)	// Expressif ESP8266
 #	define MAXINPIN		29		// Max number of input pins
+#include "extras/src/IRremoteESP8266/IRremoteESP8266.cpp"
+#include "extras/src/IRremoteESP8266/IRdebug.cpp"
 #endif
 
 void Souliss_SetAddress(U16 addr, U16 subnetmask, U16 mysupernode);
@@ -218,6 +219,8 @@ float Souliss_LastIn_GetAnalog(U8 *memory_map, U8 id, U8 slot);
 #include "base/T4n.cpp"
 #include "base/T5n.cpp"
 #include "base/T6n.cpp"
+#include "base/SoulissIrGateway.cpp"
+
 
 #include "tools/types.h"
 #include "GetConfig.h"			// need : ethUsrCfg.h, vNetCfg.h, SoulissCfg.h, MaCacoCfg.h
