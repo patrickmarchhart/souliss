@@ -34,7 +34,6 @@
 #define	Souliss_T4n						0x40			// Typicals Group 0x40
 #define	Souliss_T5n						0x50			// Typicals Group 0x50
 #define	Souliss_T6n						0x60			// Typicals Group 0x60
-#define	Souliss_T7n						0x70			// Typicals Group 0x70
 
 #define Souliss_T11						0x11			// ON/OFF Digital Output with Timer Option
 #define Souliss_T12						0x12			// ON/OFF Digital Output with AUTO mode
