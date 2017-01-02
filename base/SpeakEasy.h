@@ -319,11 +319,9 @@ unsigned long tmr_fast=0, tmr_slow=0;
 #define LastIn_GetData(id, slot) 								Souliss_LastIn_GetData(memory_map, id, slot)
 #define LastIn_GetAnalog(id, slot)								Souliss_LastIn_GetAnalog(memory_map, id, slot)
 
-//#define Souliss_ir_control_remote_node(target_address, command_slot, target_command, ir_signal, ir_decode_type, ir_command)				Souliss_ir_control_remote_node(memory_map, target_address, command_slot, target_command, ir_signal, ir_decode_type, ir_command)
-//#define Souliss_ir_control_local_node(command_slot, target_command, ir_signal, ir_decode_type, ir_command)								Souliss_ir_control_local_node(memory_map, command_slot, target_command, ir_signal, ir_decode_type, ir_command)
-#define Souliss_ir_control_remote_node(target_address, command_slot, target_command, ir_decode_type, ir_command)				Souliss_ir_control_remote_node(memory_map, target_address, command_slot, target_command, ir_decode_type, ir_command)
-#define Souliss_ir_control_local_node(command_slot, target_command, ir_decode_type, ir_command)								Souliss_ir_control_local_node(memory_map, command_slot, target_command, ir_decode_type, ir_command)
-#define Souliss_ir_control_device(typical, command_slot, parameter, ir_decode_type, nbits, ir_command)									Souliss_ir_control_device(memory_map, typical, command_slot, parameter, ir_decode_type, nbits, ir_command)
+#define Souliss_IR_control_remote_node(target_address, command_slot, target_command, ir_decode_type, ir_command)			Souliss_IR_control_remote_node(memory_map, target_address, command_slot, target_command, ir_decode_type, ir_command)
+#define Souliss_IR_control_local_node(command_slot, target_command, ir_decode_type, ir_command)								Souliss_IR_control_local_node(memory_map, command_slot, target_command, ir_decode_type, ir_command)
+#define Souliss_IR_control_irdevice(typical, command_slot, parameter, ir_decode_type, nbits, ir_command)					Souliss_IR_control_irdevice(memory_map, typical, command_slot, parameter, ir_decode_type, nbits, ir_command)
 
 /*****************************************/
 
